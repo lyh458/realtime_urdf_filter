@@ -33,7 +33,8 @@ find_package(catkin REQUIRED COMPONENTS
   tf
   resource_retriever
   cv_bridge
-  image_transport)
+  image_transport
+  )
 
 catkin_package(
 #  DEPEND
