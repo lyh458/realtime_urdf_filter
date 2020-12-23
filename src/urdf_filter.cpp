@@ -492,6 +492,7 @@ void RealtimeURDFFilter::render (const double* camera_projection_matrix, ros::Ti
   // get transformation from camera to "fixed frame"
   tf::StampedTransform camera_transform;
   try {
+    tf_.waitForTransform (cam_frame_, fixed_frame_, timestamp, ros::Duration(5.0));
     tf_.lookupTransform (cam_frame_, fixed_frame_, timestamp, camera_transform);
     ROS_DEBUG_STREAM("Camera to world translation "<<
         cam_frame_<<" -> "<<fixed_frame_<<
