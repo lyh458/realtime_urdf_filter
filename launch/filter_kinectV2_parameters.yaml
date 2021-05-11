@@ -1,3 +1,4 @@
+# fixed_frame: /world
 fixed_frame: /iiwa_link_0
 #camera_frame: /kinect1_rgb_optical_frame
 ### WARNING: Add 0.02 is a HACK to make it work with the KinectV2
